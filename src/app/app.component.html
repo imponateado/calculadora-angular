@@ -1,0 +1,5 @@
+<div class="calculadora-container">
+    <app-screen [displayValue]="displayValue"></app-screen>
+
+    <app-numpad (buttonClicked)="handleButtonClick($event)"></app-numpad>
+</div>

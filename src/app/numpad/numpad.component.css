@@ -1,0 +1,43 @@
+.calculator-numpad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+  gap: 1px; /* Small gap between buttons */
+  background-color: #333; /* Dark background for the numpad area */
+  padding: 1px; /* Padding to make the gap visible around the edges */
+  border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+}
+
+.btn {
+  background-color: #666; /* Default button color */
+  color: white; /* White text */
+  font-size: 1.5em; /* Button font size */
+  padding: 20px; /* Button padding */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+  border-radius: 4px; /* Slightly rounded button corners */
+}
+
+.btn:hover {
+  background-color: #888; /* Darker background on hover */
+}
+
+.operator {
+  background-color: #f90; /* Orange color for operators */
+}
+
+.operator:hover {
+  background-color: #ff8000; /* Darker orange on hover */
+}
+
+.equal {
+  background-color: #0c0; /* Green color for the equal button */
+}
+
+.equal:hover {
+  background-color: #0a0; /* Darker green on hover */
+}
+
+.zero {
+  grid-column: span 2; /* Make the zero button span two columns */
+}
